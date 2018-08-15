@@ -16,7 +16,8 @@
     <link href="css/donate.css" rel="stylesheet" type="text/css" />
     <link href="css/theme.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">				
+    <link href="css/sweetalert2.css" rel="stylesheet" type="text/css" />
+   <!--  <style type="text/css">				
         .mylink{
             color: blue;
             font-style: bold;
@@ -25,7 +26,7 @@
             color:#737373;
             font-size: 16px;
         }
-    </style>
+    </style> -->
 
 
 </head>
@@ -129,7 +130,7 @@
                 <section id="tm-bottom-a" class="tm-bottom-a uk-grid" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin="">
                     <div class="uk-width-1-1 uk-row-first">
                         <div class="uk-panel">
-                            <div class="about-team-page-top-wrap">
+                            <div class="about-team-page-top-wrap" style="padding-bottom: 0">
                                 <div class="uk-grid">
                                     <div class="uk-width-large-10-10 uk-width-small-1-1 left-part">
                                         <p class="sub-title">We always recommend staking twice on each match so the results below are from the last bet I placed before a goal lands, this should serve as an overview of the VIP results of what have been won and lost. Nothing deleted or added. </p>
@@ -137,7 +138,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="shop-main-page-wrap">
+                            <div class="shop-main-page-wrap" style="padding-top: 0">
                                 <div class="container uk-container-center">
                                     <div class="uk-grid">
                                         <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-large-1-4 uk-text-center">
@@ -157,12 +158,9 @@
                                         </div>
                                         <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-large-1-4 uk-text-center">
                                             <div class="fun-shop-btn">
-                                              <a style="font-size: 24px;" href="single_web_result.php?name=dec 2017">Dec 2017<span>No Bet</span></a>
+                                              <a style="font-size: 24px;" href="#">Dec 2017<span>No Bet</span></a>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="uk-grid">
                                         <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-large-1-4 uk-text-center">
                                             <div class="fun-shop-btn">
                                               <a style="font-size: 24px;" href="single_web_result.php?name=jan 2018">Jan 2018<span>Bet</span></a>
@@ -178,7 +176,33 @@
                                               <a style="font-size: 24px;" href="single_web_result.php?name=mar 2018">Mar 2018<span>Bet</span></a>
                                             </div>
                                         </div>
+                                        <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-large-1-4 uk-text-center">
+                                            <div class="fun-shop-btn">
+                                              <a style="font-size: 24px;" href="single_web_result.php?name=april 2018">April 2018<span>Bet</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-large-1-4 uk-text-center">
+                                            <div class="fun-shop-btn">
+                                              <a style="font-size: 24px;" href="single_web_result.php?name=may 2018">May 2018<span>Bet</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-large-1-4 uk-text-center">
+                                            <div class="fun-shop-btn">
+                                              <a style="font-size: 24px;" href="single_web_result.php?name=june 2018">June 2018<span>Bet</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-large-1-4 uk-text-center">
+                                            <div class="fun-shop-btn">
+                                              <a style="font-size: 24px;" href="#">July 2018<span>No Bet</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-large-1-4 uk-width-medium-1-2 uk-width-large-1-4 uk-text-center">
+                                            <div class="fun-shop-btn">
+                                              <a style="font-size: 24px;" onclick="join();">August 2018<span>Bet</span></a>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                                 
                             </div>
@@ -235,9 +259,27 @@
 <script type="text/javascript" src="js/components/lightbox.js"></script>
 <script type="text/javascript" src="js/components/accordion.js"></script>
 <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/sweetalert2.all.js"></script>
 
 <script type="text/javascript" src="js/theme.js"></script>
 
+<script type="text/javascript">
+
+    function join(){
+        swal({
+                title: 'Join VIP',                
+                text: 'Still in progress on VIP channel. Join to receive inplays bets',
+                type: 'info',
+                showCancelButton: true,
+                confirmButtonText: 'Sure!',
+                cancelButtonText: 'Maybe Later',
+            }).then(function () {
+                var url = "subscribe.php";
+                window.location.href = url;                
+            });
+    
+    }
+</script>
 </body>
 
 </html>

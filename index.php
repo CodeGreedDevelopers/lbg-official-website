@@ -16,6 +16,7 @@
     <link href="css/akslider.css" rel="stylesheet" type="text/css" />
     <link href="css/donate.css" rel="stylesheet" type="text/css" />
     <link href="css/theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/sweetalert2.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type='text/javascript' src='../../ajax.googleapis.com/ajax/libs/mootools/1.3.1/mootools-yui-compressed.js'></script>
 
@@ -226,8 +227,28 @@
 <script type="text/javascript" src="js/components/sticky.js"></script>
 <script type="text/javascript" src="js/components/lightbox.js"></script>
 <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/sweetalert2.all.js"></script>
 
 <script type="text/javascript" src="js/theme.js"></script>
+
+<script type="text/javascript">
+    setTimeout(function() {  
+        swal({
+            title: 'Join Our Channel',                
+            text: 'Have you joined our FREE Telegram Channel??',
+            type: 'info',
+            showCancelButton: true,
+            confirmButtonText: 'Join now',
+            cancelButtonText: 'Already joined',
+        }).then(function () {
+            var url = "https://t.me/livebettinggoal";
+            var win = window.open(url, '_blank');
+            win.focus();               
+        });
+       
+    }, 10000);   
+   
+</script>
 
 
 </body>

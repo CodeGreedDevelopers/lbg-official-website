@@ -53,7 +53,7 @@
             <div style="height: 70px;" class="uk-sticky-placeholder">
                 <nav style="margin: 0px;" class="tm-navbar uk-navbar" data-uk-sticky="">
                     <div class="uk-container uk-container-center">
-                        <a class="tm-logo uk-float-left" href="index.html">
+                        <a class="tm-logo uk-float-left" href="index.php">
                             <img src="images/logo-img.png" alt="logo" title="logo"> <span>LBG<em>.com</em></span>
                         </a>
 

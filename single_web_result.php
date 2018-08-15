@@ -139,6 +139,15 @@ $month=$_GET['name'];
             case "mar 2018":
                 $link="https://docs.google.com/spreadsheets/d/e/2PACX-1vQJKDwdHXe7HMVkS1f_R23jrnlXwfrXl6wjtCGnyzYbCidVXKDgzIOpEyxoiMJXRsPaFBRBMxSzPGtX/pubhtml?widget=true&amp;headers=false";
                 break;
+            case "april 2018":
+                $link="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzM23YDTtFpdRqQcVYjbPTFKudEGQFs0SqBZwQNvqCHoAp7CKTJd9rLlPgv5YRFWHN1kBmMAhnTBzE/pubhtml?widget=true&amp;headers=false";
+                break;
+            case "may 2018":
+                $link="https://docs.google.com/spreadsheets/d/e/2PACX-1vQk2AxPL85jptMH1Lts-fEs4bpwrZC_hJF6VYMc-OsTOV2cL-QnEJ1sC7XXfxOp5XoUmI_5wjb2yIub/pubhtml?widget=true&amp;headers=false";
+                break;
+            case "june 2018":
+                $link="https://docs.google.com/spreadsheets/d/e/2PACX-1vSifT3cKx0VKHxkRAXM6K6jvew_5OF2PaoQun3Ae1s_XmUA1EYH30lc1T5LdNIbGQSgByX_ml-Ghuub/pubhtml?widget=true&amp;headers=false";
+                break;
             default:
                 $link="https://docs.google.com/spreadsheets/d/e/2PACX-1vQJKDwdHXe7HMVkS1f_R23jrnlXwfrXl6wjtCGnyzYbCidVXKDgzIOpEyxoiMJXRsPaFBRBMxSzPGtX/pubhtml?widget=true&amp;headers=false";
                 break;
